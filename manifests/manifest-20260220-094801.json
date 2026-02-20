@@ -1,0 +1,1225 @@
+{
+  "manifest_id": "manifest-20260220-094801",
+  "timestamp": "20260220-094801",
+  "project_version": "0.1.0",
+  "corpus": {
+    "raw_pdfs": [
+      {
+        "file": "00-gobernanza_marco_ciberseguridad.pdf",
+        "size_bytes": 14979148,
+        "hash": "d188fd0885b4588154298326ab502ca78ba7729907588eee7eb93a20ee0db41d"
+      },
+      {
+        "file": "01-glosario_ccn.pdf",
+        "size_bytes": 7611620,
+        "hash": "76d568fec696539c466ac80f290e9734fa2402a62d6c34ddc8be56e7c8c17d25"
+      },
+      {
+        "file": "02-glosario_ciberseguridad_incibe_2021.pdf",
+        "size_bytes": 4072607,
+        "hash": "307ceaf3e7e92cffc66a96225452323c162b43b3039f72262c916cb1400e8318"
+      },
+      {
+        "file": "03-observatorio_riesgos_ciberseguridad_2024.pdf",
+        "size_bytes": 4881353,
+        "hash": "0062eb5974b420782d2794ce92eb8d6da484e2bbe83152ce3008496b2aa6407b"
+      },
+      {
+        "file": "04-observatorio_riesgos_ciberseguridad_2024_pliegos.pdf",
+        "size_bytes": 4592575,
+        "hash": "8e7543b452fd397f6ccd303f4ccd91abac4309c4066d7601c3258ee15432e9e1"
+      },
+      {
+        "file": "05-ens_medidas_implantacion.pdf",
+        "size_bytes": 1313681,
+        "hash": "9105fe357fa8ac1b6aae4bdc79f42babfdccc2007b39de0e8de107ce11d27bc9"
+      },
+      {
+        "file": "06-ens_declaracion_aplicabilidad.pdf",
+        "size_bytes": 5923022,
+        "hash": "da37a9fb635085bfcee242cc0adec4b02987628203023a012992f3fb98ce3f87"
+      },
+      {
+        "file": "07-nist_csf_v2.pdf",
+        "size_bytes": 1518858,
+        "hash": "3c31f46fee98cac0c4323453e5109291a213b4de7fef8c058af9bf67f717433c"
+      },
+      {
+        "file": "08-cumplimiento_legal_incibe.pdf",
+        "size_bytes": 1856334,
+        "hash": "8a3f8818f5735d9237dd5cbdbf8d709049c73df19a633c580bbff5cf39705310"
+      },
+      {
+        "file": "09-pilar_analisis_gestion_riesgos.pdf",
+        "size_bytes": 16777216,
+        "hash": "32b5c38e6e29311ff8ab42bbfc5b105761f95fc8a7538ebfcf97cd452723c488"
+      },
+      {
+        "file": "10-pilar_manual_herramienta_v62.pdf",
+        "size_bytes": 1444551,
+        "hash": "bdc747dbd51935eed9bf3a1cf6ebb6107244ca067f7feb9b6ec095e3ab3db46e"
+      },
+      {
+        "file": "11-pilar_impacto_continuidad.pdf",
+        "size_bytes": 1381190,
+        "hash": "788473502e19ebf45ca4d746007a5266c335f2d16d51a5c4867035547129aab0"
+      },
+      {
+        "file": "12-rmat_manual_usuario.pdf",
+        "size_bytes": 4194304,
+        "hash": "84b0f93db4fe12387cbcc624f3dae5e03cbe8bfc9e795f94568c5928e8e857ca"
+      },
+      {
+        "file": "13-ccn_stic_473c.pdf",
+        "size_bytes": 2579477,
+        "hash": "de29ad4b354b8c99cef54e04d50f3d5ec3b6adc1267b70b516998a93a5521084"
+      },
+      {
+        "file": "14-gestion_riesgos_metad_incibe.pdf",
+        "size_bytes": 4068653,
+        "hash": "4c5f1e910be67f08b6a9c5b92da0367407ce0c0dc2729b5501de62f44db5e485"
+      },
+      {
+        "file": "15-plan_director_seguridad.pdf",
+        "size_bytes": 501031,
+        "hash": "8aed41c18ee1b814acdc024a461f81d6eddad39c695672dbccdc04746df7b73e"
+      },
+      {
+        "file": "16-principios_recomendaciones_basicas.pdf",
+        "size_bytes": 2382926,
+        "hash": "a5ba9967dcdee1e0a768e35d9059aa0033d0f3837cac636b05b11d1b50d997fd"
+      },
+      {
+        "file": "17-rgpd_competitividad_2024.pdf",
+        "size_bytes": 5093006,
+        "hash": "8efe2e5ac7b401bceda5d05a513b6986b8c436a33f49c8d786d1250abd2a5662"
+      },
+      {
+        "file": "18-gestion_cibercrisis.pdf",
+        "size_bytes": 8491059,
+        "hash": "7e1832a27cd17d08d379562ae6828794ecd60dfbbc78659001be813af2b4b352"
+      },
+      {
+        "file": "19-cibercrisis_entidades_locales.pdf",
+        "size_bytes": 3319352,
+        "hash": "adfa55ca354ff1ccfebabde4c05d18cdc85c7423631c6e626bac78e2151245aa"
+      },
+      {
+        "file": "20-gestion_crisis_incibe.pdf",
+        "size_bytes": 2820044,
+        "hash": "5386b8e1db1dabbc24d7dafbd73b6ca12154be149038c916e9284e50981212f2"
+      },
+      {
+        "file": "21-ransomware_ccn.pdf",
+        "size_bytes": 2728128,
+        "hash": "fc07ef601723d552845b907fadd3efddbb951f3134b653ac37408715f8a21561"
+      },
+      {
+        "file": "22-ransomware_incidentes_ccn.pdf",
+        "size_bytes": 2464509,
+        "hash": "fa31bdcab68e33d1540e0708fae30a7c488d0762a295777002a1a89bc6e64a31"
+      },
+      {
+        "file": "23-ransomware_incibe.pdf",
+        "size_bytes": 4242858,
+        "hash": "d11e945b236248e1a850a97d2912b5776a738b13075f5c474642d03b1dfc517e"
+      },
+      {
+        "file": "24-fuga_informacion.pdf",
+        "size_bytes": 3692665,
+        "hash": "67fc79199c4f057a5e889bea9b45ab2bd1c71394a8859f5e9f13ed09744875c1"
+      },
+      {
+        "file": "25-ciberamenazas_entornos_empresariales.pdf",
+        "size_bytes": 12973614,
+        "hash": "022e8bcc44533065c4f8b3222973e68f7c252c8de6d00cdedd41827ebf1a763e"
+      },
+      {
+        "file": "26-desinformacion_ciberespacio.pdf",
+        "size_bytes": 5618618,
+        "hash": "8ba640dd2d3a00b079276a3f480ac2e8088a8fbeb677b73971190ef398e098a5"
+      },
+      {
+        "file": "27-identidad_digital_ciberseguridad.pdf",
+        "size_bytes": 7535659,
+        "hash": "c0a7ea22218a39f74c4362615df639769472eda40a0f0b601968dcab1912c95c"
+      },
+      {
+        "file": "28-inteligencia_artificial_ccn.pdf",
+        "size_bytes": 2425173,
+        "hash": "6c2309bf6990072e4fa6fcd95232b1f514059e90d8d0daffbbdd30549ca6b0b5"
+      },
+      {
+        "file": "29-etiquetas_seguridad.pdf",
+        "size_bytes": 1377711,
+        "hash": "4f2c12a0e440ed72eb2d1544f5101d87b5cb7e88e5d595db929859cc23f0ba1b"
+      },
+      {
+        "file": "30-correo_electronico_seguridad.pdf",
+        "size_bytes": 2821552,
+        "hash": "54f0edd7d67f491cbcdf80e4d79307890a0f305c7380f0c19dca23275a931950"
+      },
+      {
+        "file": "31-correo_dmarc.pdf",
+        "size_bytes": 2399517,
+        "hash": "ffdcb0e3070e0483f61dc6d21b8e44088f7d5f44f594451b2bb1cf857c65697f"
+      },
+      {
+        "file": "32-https_seguridad.pdf",
+        "size_bytes": 3397321,
+        "hash": "dc96518fea87e8b9a835221d61cf97de4e4853b413321a89f5f3ea7d5d31a833"
+      },
+      {
+        "file": "33-proteccion_dos_cortafuegos.pdf",
+        "size_bytes": 1572544,
+        "hash": "2656b6cd8952bb00bc273a3f7c451ae9591617a5443b45953ac913906a303dd6"
+      },
+      {
+        "file": "34-cdn_recomendaciones.pdf",
+        "size_bytes": 3318664,
+        "hash": "61662ec970bff52714037d15a15c20e984ca0cea20c81b8764b514d3623dd235"
+      },
+      {
+        "file": "35-seguridad_redes_wifi.pdf",
+        "size_bytes": 6019036,
+        "hash": "7a667ceb9a3647908ebb734149ca0b9ec9b0ed267647a0e7ae80f3a34c282207"
+      },
+      {
+        "file": "36-navegadores_web_seguridad.pdf",
+        "size_bytes": 7743473,
+        "hash": "61649a4cf3da41b75c14f72cf75b57d7dcad17a481d767d39b127c1bbaa45afd"
+      },
+      {
+        "file": "37-firefox_seguridad.pdf",
+        "size_bytes": 2803362,
+        "hash": "d3b1d84751be2d8da73e6b1acdf3cfa3d3877ae5dd4502f088f7d844b46f32da"
+      },
+      {
+        "file": "38-chrome_seguridad.pdf",
+        "size_bytes": 2993371,
+        "hash": "705912dac0591305b2a12f38f724a41f08ebcdfa1891a00ae8ae78cdfb9e8713"
+      },
+      {
+        "file": "39-edge_seguridad.pdf",
+        "size_bytes": 3459147,
+        "hash": "14230acb820bd039714b7a51de3a39f85165677a1a0e41faba1bbb8109a7eb4d"
+      },
+      {
+        "file": "40-endpoint_seguro.pdf",
+        "size_bytes": 1505155,
+        "hash": "3cc40d200d2bcceb64f4e12cc7562ababd6c22ed5c50eb7554123ab46c6bb968"
+      },
+      {
+        "file": "41-endpoint_seguro_anexo.pdf",
+        "size_bytes": 1964217,
+        "hash": "61e6e0a395fffc3d215c82009e5f7446bcc3f087f612484d988a5608131cdfd4"
+      },
+      {
+        "file": "42-windows11_cis_benchmark.pdf",
+        "size_bytes": 8214560,
+        "hash": "362fe88c80307a809e6cf42556b029839d1c32440048f13fff3e666653bb32ce"
+      },
+      {
+        "file": "43-macos_seguridad.pdf",
+        "size_bytes": 7614553,
+        "hash": "e81b4fbe829f3d94fec1d3e01cc419cfa90b92a1dec1d9e02ebd47b8ee2571d7"
+      },
+      {
+        "file": "44-dispositivos_moviles_seguridad.pdf",
+        "size_bytes": 881689,
+        "hash": "36da243751bc410a0e25a15c9c23785179436186c0eee9577c9669bead8d5e3f"
+      },
+      {
+        "file": "45-android_seguridad.pdf",
+        "size_bytes": 7442132,
+        "hash": "bc7f82fda206d87ae49f9e5c2a10739feca21136f757d1dac5fb3e40e9d3696d"
+      },
+      {
+        "file": "46-ipad_seguridad.pdf",
+        "size_bytes": 12819312,
+        "hash": "5b031dd5edeb3ad5aee49f47e561a00e1ce9b82b5b21ffd4cafae7518cf90209"
+      },
+      {
+        "file": "47-iphone_seguridad.pdf",
+        "size_bytes": 12300692,
+        "hash": "dc5a7da9bcda310d38f6e79bc1afae88535a1c2b1ad5de624f8cc6c3e4a4ac3e"
+      },
+      {
+        "file": "48-mdm_gestion_dispositivos.pdf",
+        "size_bytes": 1062793,
+        "hash": "37de939f048757f20bf6019bff554d8595670b160613daca5874f9ace36a14cb"
+      },
+      {
+        "file": "49-ios18_empleo_seguro.pdf",
+        "size_bytes": 1474700,
+        "hash": "63481099484c7ef1a86650381ab8194a455d1082d9cf69c045f2f23e38400e2e"
+      },
+      {
+        "file": "50-apple_platform_security.pdf",
+        "size_bytes": 3061927,
+        "hash": "46702ba1467717fc21e86852e8bc9f8ff16f2ae4a110e62a3f9b0f3ec3c24582"
+      },
+      {
+        "file": "51-apple_servicios_seguridad.pdf",
+        "size_bytes": 10039639,
+        "hash": "2fa88c61ead8c8fea9e711119e37067ca1b8e67db83b024f6e64931d91abcc7c"
+      },
+      {
+        "file": "52-virtualizacion_buenas_practicas.pdf",
+        "size_bytes": 10170562,
+        "hash": "8309dd63aa08dfd0305e4225dc24a75fa9028c90feea3a08c38bc63f57e43282"
+      },
+      {
+        "file": "53-nube_proteccion_dato_soberania.pdf",
+        "size_bytes": 2108923,
+        "hash": "c8e8435c3b98f9fd5a4c6d36dbce9bb91502ca12a1a675f6629ff0b2eb768b29"
+      },
+      {
+        "file": "54-almacenamiento_equipos_trabajo.pdf",
+        "size_bytes": 552344,
+        "hash": "16bd681c682a034ec2a5b827fd2bdebe9ff26f966691cc9bf852f4e19d49839c"
+      },
+      {
+        "file": "55-almacenamiento_nube.pdf",
+        "size_bytes": 655095,
+        "hash": "6f5d9606edef69579835e10a1d0891bb5b090fcd9b7244f8c69b31e752083610"
+      },
+      {
+        "file": "56-almacenamiento_red_corporativa.pdf",
+        "size_bytes": 562484,
+        "hash": "a4088dabceb5896e2ec4f815f06f0e7b5b82d25e1b1ac22387d979db85a12f2f"
+      },
+      {
+        "file": "57-copias_seguridad.pdf",
+        "size_bytes": 2096362,
+        "hash": "46f8ecc2ae23f441d6a8ba4f62bb4d222808464d47834c3e84f96ace262385e8"
+      },
+      {
+        "file": "58-iot_seguridad.pdf",
+        "size_bytes": 10128733,
+        "hash": "b8cf62d540e44648a5020facd362677d80837cae9c7ee3b3aae4aceb7419ced8"
+      },
+      {
+        "file": "59-iot_ccn.pdf",
+        "size_bytes": 2994852,
+        "hash": "554c3ef5f2ad0b482ddabb1984f6fc992ab56dbf5d8acecd1a1ce069b86c28c7"
+      },
+      {
+        "file": "60-redes_sociales.pdf",
+        "size_bytes": 4025886,
+        "hash": "6b0546e0b3beaf8a28fc52d355530806cbea84398ac0cf7147aace698aeac74e"
+      },
+      {
+        "file": "61-cryptojacking.pdf",
+        "size_bytes": 4370970,
+        "hash": "73e1350b1f19804d1dc946be08975e331a64c384671a1c565fe2775bacc3002f"
+      },
+      {
+        "file": "62-desarrollo_seguro.pdf",
+        "size_bytes": 3106261,
+        "hash": "1d85948eea17fd196d7c5e5d21da60a95a0bb6adf9e155ac830508fdfe634620"
+      },
+      {
+        "file": "63-drupal_seguridad.pdf",
+        "size_bytes": 3833638,
+        "hash": "408f259d0cfbc1bf70522b3f9f23717db2a425fdb9327e787520d3099f217353"
+      },
+      {
+        "file": "64-bbdd_db2_seguridad.pdf",
+        "size_bytes": 2112228,
+        "hash": "82ac002965f312c0e3e82ad1817eb19102138b10f7afc74e4285c68fc47dfe5b"
+      },
+      {
+        "file": "65-bbdd_seguridad_general.pdf",
+        "size_bytes": 1990726,
+        "hash": "c2b7ef54046128fa5c06ec3bc106e37847969ea74781bff510e5fc97db9d35f2"
+      },
+      {
+        "file": "66-teletrabajo_ccn.pdf",
+        "size_bytes": 1664449,
+        "hash": "dc5b5a0a2d865aad2b8f27293bc77a0370be2aae721db1a688f4f2d1442cfdfb"
+      },
+      {
+        "file": "67-teletrabajo_incibe.pdf",
+        "size_bytes": 3091987,
+        "hash": "73c0d58d1bb5cb554c7d40a35ec089c1df8a9836b681167688280bca9c8fa31d"
+      },
+      {
+        "file": "68-kubernetes_seguridad.pdf",
+        "size_bytes": 5949501,
+        "hash": "7553d3c9554f2231d15b2ffb2e4c523820afe7caab16b1b160fc91f4aefa9d54"
+      },
+      {
+        "file": "69-concienciacion_formacion.pdf",
+        "size_bytes": 535215,
+        "hash": "46f2adb132d2c069e39614b4e74dda1527eb213fb6fe07f6e1030c512766cfd0"
+      }
+    ],
+    "extracted_md": [
+      {
+        "file": "00-gobernanza_marco_ciberseguridad.md",
+        "size_bytes": 119911,
+        "hash": "f84c95ce41428791eb749fe190edcddf9444a414b9d0061da3c0a5b7b5619fe5"
+      },
+      {
+        "file": "01-glosario_ccn.md",
+        "size_bytes": 2216721,
+        "hash": "5cfdd7ad17c86d9b41e23a5f11de4732e686fc08b2204b73ee26eadb2ab2861d"
+      },
+      {
+        "file": "02-glosario_ciberseguridad_incibe_2021.md",
+        "size_bytes": 188256,
+        "hash": "7caad5f8c887cfc8f13e0f7bbd2a071215dcacfec422d9c5336508fe2367d96a"
+      },
+      {
+        "file": "03-observatorio_riesgos_ciberseguridad_2024.md",
+        "size_bytes": 100574,
+        "hash": "0992906bcf29f8716c25c7987dd77d3e03dc9f7b3707a70b6e16a3260696b774"
+      },
+      {
+        "file": "04-observatorio_riesgos_ciberseguridad_2024_pliegos.md",
+        "size_bytes": 99311,
+        "hash": "8f9c119e9118997fe7e9134444c6b5e966c7a03540efd366884d327aea4522ac"
+      },
+      {
+        "file": "05-ens_medidas_implantacion.md",
+        "size_bytes": 235895,
+        "hash": "7b2bd49bf0d8ad18833ffb57821b5bb9fc723056660e2064393c5c854b68e088"
+      },
+      {
+        "file": "06-ens_declaracion_aplicabilidad.md",
+        "size_bytes": 39681,
+        "hash": "c6cfe94504b8cdef988cf82aec05f3c4c0f61a37f2c4c1b6c36e0bb403ce1834"
+      },
+      {
+        "file": "07-nist_csf_v2.md",
+        "size_bytes": 71286,
+        "hash": "5f248dafb2699a6e3ba0df02443e9de1f49d897ea3e969877175c37b5ba5a4a5"
+      },
+      {
+        "file": "08-cumplimiento_legal_incibe.md",
+        "size_bytes": 25665,
+        "hash": "79e64bece4927121b0e33612bef574ec3941956882a6f349d82f41ca540bec41"
+      },
+      {
+        "file": "09-pilar_analisis_gestion_riesgos.md",
+        "size_bytes": 203516,
+        "hash": "cc89f79b9e07f5a65a8473cb86ce29bb795b45ab529c69a493504e553912b477"
+      },
+      {
+        "file": "10-pilar_manual_herramienta_v62.md",
+        "size_bytes": 59927,
+        "hash": "5ba275a22ab1768c4090aeabb6101e604acbf10d11edf03a4dd8d6e4ffac039e"
+      },
+      {
+        "file": "11-pilar_impacto_continuidad.md",
+        "size_bytes": 64974,
+        "hash": "2fcc79c59b987df92404627a8e23f8d76611717572cead96169930b3df93c6c4"
+      },
+      {
+        "file": "12-rmat_manual_usuario.md",
+        "size_bytes": 74999,
+        "hash": "82b4c0cb87ba4589976862e228fbfcc2a455cf975fb614baf6bb98cf804bacee"
+      },
+      {
+        "file": "13-ccn_stic_473c.md",
+        "size_bytes": 45290,
+        "hash": "ec35375d3876e6bda564574d538719e257566894ef1dc0ab7cb5737874b8ae3b"
+      },
+      {
+        "file": "14-gestion_riesgos_metad_incibe.md",
+        "size_bytes": 44079,
+        "hash": "96e3d32a459796ba8d8730ae84cbdd2ead545b9bd931b32d433ed6bbb2b9e361"
+      },
+      {
+        "file": "15-plan_director_seguridad.md",
+        "size_bytes": 11950,
+        "hash": "6fae28f69a6669424dc43635a9be8b3bb69cf88c91719c9b133d98b1a871fcae"
+      },
+      {
+        "file": "16-principios_recomendaciones_basicas.md",
+        "size_bytes": 80134,
+        "hash": "1a6966143c8755a93e5ba6832452211c9b61ea28032337cbc0873bcf04df1dbe"
+      },
+      {
+        "file": "17-rgpd_competitividad_2024.md",
+        "size_bytes": 97687,
+        "hash": "93f5de42247bc5596dafa80dba81ebfe2c039c44eb063a9f58e42f8282268819"
+      },
+      {
+        "file": "18-gestion_cibercrisis.md",
+        "size_bytes": 103054,
+        "hash": "4bf8f3e2ef28db2713b84b4253436f80f61c14c2719f513758ef52c5351bb5c7"
+      },
+      {
+        "file": "19-cibercrisis_entidades_locales.md",
+        "size_bytes": 147192,
+        "hash": "512d32544a173aae15c08e3a2eff99220d382f6d759908caa56183b4c1e9c24b"
+      },
+      {
+        "file": "20-gestion_crisis_incibe.md",
+        "size_bytes": 103071,
+        "hash": "497c09c9a937d98a8ad1a88289d62a42fae74943fdeac728935e9e05672321d1"
+      },
+      {
+        "file": "21-ransomware_ccn.md",
+        "size_bytes": 65104,
+        "hash": "26960768ebe32e76d724d4ed4d14d08f341e109b85e4ffd366ea29db66054ffb"
+      },
+      {
+        "file": "22-ransomware_incidentes_ccn.md",
+        "size_bytes": 40325,
+        "hash": "f23602d904f7d0d31694babdb8390d076813cf4e2281d94c022c57ec2d344860"
+      },
+      {
+        "file": "23-ransomware_incibe.md",
+        "size_bytes": 62790,
+        "hash": "b6e29831aea3b69b9a834624681353ed3670961ae1f0ecd93774f7d70ce38876"
+      },
+      {
+        "file": "24-fuga_informacion.md",
+        "size_bytes": 41300,
+        "hash": "1976adb29622290a337c2fd4806746e2872a79a5a682db34369c27da87ae344c"
+      },
+      {
+        "file": "25-ciberamenazas_entornos_empresariales.md",
+        "size_bytes": 131217,
+        "hash": "191af1bdc426ec976539ac66c3bd8e545eb612a221875610de62cc0c2ed7787a"
+      },
+      {
+        "file": "26-desinformacion_ciberespacio.md",
+        "size_bytes": 88653,
+        "hash": "731fa1c67d4365d50a6afff30a6ca4ea60d5f098b8742df790df18d9c27a7120"
+      },
+      {
+        "file": "27-identidad_digital_ciberseguridad.md",
+        "size_bytes": 69244,
+        "hash": "08dcf0acb4de670463c21729098680a175c2f47b27df5f459abf44b3c0997322"
+      },
+      {
+        "file": "28-inteligencia_artificial_ccn.md",
+        "size_bytes": 243136,
+        "hash": "2414ea885d5121974117a4003244efc66a4bfb6317951df0297476cd2a01c7e5"
+      },
+      {
+        "file": "29-etiquetas_seguridad.md",
+        "size_bytes": 13449,
+        "hash": "72fd242dadfc2ed036d427fddcc6388fefe14fa5ced86bdb1dbdc9e3eb12ac74"
+      },
+      {
+        "file": "30-correo_electronico_seguridad.md",
+        "size_bytes": 69975,
+        "hash": "716abf307356dcf2d013bb556b2a51eafc573b29947f86562269fcdc59b5e09f"
+      },
+      {
+        "file": "31-correo_dmarc.md",
+        "size_bytes": 84496,
+        "hash": "a0a45ceba9f3e7127d69bcc31458e3836b6bbdd8913f0a0ddb40ba591190fdff"
+      },
+      {
+        "file": "32-https_seguridad.md",
+        "size_bytes": 242364,
+        "hash": "3fcd06e40758a672f91663c777e728dd6aec9bf74fa9ad5d8bc95bdb34dcebb7"
+      },
+      {
+        "file": "33-proteccion_dos_cortafuegos.md",
+        "size_bytes": 42545,
+        "hash": "b960ef73efcc59fe1548da6c024c6c2f7cee419dcd6b3b43afb50c44b77baf2b"
+      },
+      {
+        "file": "34-cdn_recomendaciones.md",
+        "size_bytes": 39777,
+        "hash": "e543b6e4321a08ef61f7e1690732df5910a9b8affd1f3d882e62258a7e554567"
+      },
+      {
+        "file": "35-seguridad_redes_wifi.md",
+        "size_bytes": 49032,
+        "hash": "fcea85f7ac15bf6e80274913834ebbf54aba7d5a912caf942d9f8dda1d2264c7"
+      },
+      {
+        "file": "36-navegadores_web_seguridad.md",
+        "size_bytes": 74788,
+        "hash": "ca35545791a12687e7886426b3cde132fd0c51f92283465936b01d851905ea45"
+      },
+      {
+        "file": "37-firefox_seguridad.md",
+        "size_bytes": 50347,
+        "hash": "5442ba2ff0efe2beb4e9727480da47f43637ddfe0f0e2ce80f1e838596c61e79"
+      },
+      {
+        "file": "38-chrome_seguridad.md",
+        "size_bytes": 30009,
+        "hash": "a91aee65950b137158b474504339ea0435b11970ae07432e05992deba53f4637"
+      },
+      {
+        "file": "39-edge_seguridad.md",
+        "size_bytes": 36164,
+        "hash": "d4f28039875244cd74c080881b51408e0c93c188441149acb1647b1f2590da9a"
+      },
+      {
+        "file": "40-endpoint_seguro.md",
+        "size_bytes": 120245,
+        "hash": "00055f21019ed1f66972173060b5a1bd42be217a7ef2db93a25ea8bea4070539"
+      },
+      {
+        "file": "41-endpoint_seguro_anexo.md",
+        "size_bytes": 37359,
+        "hash": "544ea0cc653f6818c3ce412f0e389d9200e1b22a846c2e6816f86143bc1bdc84"
+      },
+      {
+        "file": "42-windows11_cis_benchmark.md",
+        "size_bytes": 1973658,
+        "hash": "5fb0df718d8abf4fee7648ec28caa7f7195a253b4a9c3aeeab415b55c9b42a0a"
+      },
+      {
+        "file": "43-macos_seguridad.md",
+        "size_bytes": 43424,
+        "hash": "43a5b1023d712c4a0857d5ff733319843788801c4223c91979e763fa7f28d14c"
+      },
+      {
+        "file": "44-dispositivos_moviles_seguridad.md",
+        "size_bytes": 151061,
+        "hash": "dfd865daba20692b77f195295a930e5b3b07a412bcb1cd41d07829aa36f05411"
+      },
+      {
+        "file": "45-android_seguridad.md",
+        "size_bytes": 375087,
+        "hash": "38ba529052ee3b260d165827da0956d60fc9d413c1f5196fc086e4d12d3b8837"
+      },
+      {
+        "file": "46-ipad_seguridad.md",
+        "size_bytes": 581361,
+        "hash": "1bd07f9a6605c9784139adfdb818dfcb376819c33d3024242d2e8ce04091a8ea"
+      },
+      {
+        "file": "47-iphone_seguridad.md",
+        "size_bytes": 595485,
+        "hash": "f96b4db110738dcf30c1824790553403b41c3b6df3d0fb3c6b5a06e0ef8f398f"
+      },
+      {
+        "file": "48-mdm_gestion_dispositivos.md",
+        "size_bytes": 313723,
+        "hash": "d52e9249209edd81847c0d939f66d8e9b07633a5936b56799e94af4fd932ca37"
+      },
+      {
+        "file": "49-ios18_empleo_seguro.md",
+        "size_bytes": 81059,
+        "hash": "8edbc2cac537c2dc80ef0ab6f02e16f53f6d7cf5e67c4914a6cd3c6f56aebf4a"
+      },
+      {
+        "file": "50-apple_platform_security.md",
+        "size_bytes": 696572,
+        "hash": "222c482e7446661ca3ab1b02d072e47af9977ff4f9a7032e4878a4010fb13391"
+      },
+      {
+        "file": "51-apple_servicios_seguridad.md",
+        "size_bytes": 290646,
+        "hash": "c63e94f2ec7c039e3e2c8946f7e3364eaf17e9aae59c30f4f4763881d0920615"
+      },
+      {
+        "file": "52-virtualizacion_buenas_practicas.md",
+        "size_bytes": 95947,
+        "hash": "c6452bbce75fddff2c02c5e1adc1f674c9c75b1777ce2c5ac76d69f6a23e166f"
+      },
+      {
+        "file": "53-nube_proteccion_dato_soberania.md",
+        "size_bytes": 146193,
+        "hash": "5260b6e46a07af8b6ef841f769012c1452254edea15fc54d8d349d374933689d"
+      },
+      {
+        "file": "54-almacenamiento_equipos_trabajo.md",
+        "size_bytes": 8962,
+        "hash": "9e05478271a5313eda05a156767172f8a81337e1cbb6b900d5b683c39de5d566"
+      },
+      {
+        "file": "55-almacenamiento_nube.md",
+        "size_bytes": 9268,
+        "hash": "c3b14a9680f9040e29a93272b956a4380cd05fd03d78cc9b0739329f16ab5037"
+      },
+      {
+        "file": "56-almacenamiento_red_corporativa.md",
+        "size_bytes": 11223,
+        "hash": "e92f668c04b33a7ef22365db5f458839e55964a00a2d6a4391c668e4e0d44285"
+      },
+      {
+        "file": "57-copias_seguridad.md",
+        "size_bytes": 53884,
+        "hash": "77363e4ad0df51d0259892bb2f3f886bea4a7fe68d972e24b80e1dacc641a127"
+      },
+      {
+        "file": "58-iot_seguridad.md",
+        "size_bytes": 49201,
+        "hash": "546ba05de5dab7ad988ea568a910c39928f15335f7f17ef836ace2d72324b36c"
+      },
+      {
+        "file": "59-iot_ccn.md",
+        "size_bytes": 62592,
+        "hash": "8513a267bfe7834fa4c561c0cdb56d703bdeae519a0f82bd5e1d38956468f1a1"
+      },
+      {
+        "file": "60-redes_sociales.md",
+        "size_bytes": 118233,
+        "hash": "eebcf5e22aefbcaab037d9fa14135a0fe9f58505bbb7603a63d9e92edb23e980"
+      },
+      {
+        "file": "61-cryptojacking.md",
+        "size_bytes": 31264,
+        "hash": "b92a1dcdce17eaa82652dfd1f57b7fec596040f0cb905072a21102895aeb4ff2"
+      },
+      {
+        "file": "62-desarrollo_seguro.md",
+        "size_bytes": 165496,
+        "hash": "09761e06a290c7e501ca471e5d21bf6447e268181bc72ccc06ae4eff58e94b04"
+      },
+      {
+        "file": "63-drupal_seguridad.md",
+        "size_bytes": 133858,
+        "hash": "8b7cc64e85ff424e7eded8a1d5258c34015ec8408e68e71545279d529995f76b"
+      },
+      {
+        "file": "64-bbdd_db2_seguridad.md",
+        "size_bytes": 61248,
+        "hash": "50d5c022a3ba97ab6200c65b9b2a93796537b531ef6755aa02451b4078de8005"
+      },
+      {
+        "file": "65-bbdd_seguridad_general.md",
+        "size_bytes": 54204,
+        "hash": "e58969d424f76d576a35bc9b6432b504dd6c5532d4c44ab04ac6b81f4ffc3d9f"
+      },
+      {
+        "file": "66-teletrabajo_ccn.md",
+        "size_bytes": 197984,
+        "hash": "5ddd318fce95861ffdd3b835034b5a46e91d6b4f3ed82e8ec478788798ea0e33"
+      },
+      {
+        "file": "67-teletrabajo_incibe.md",
+        "size_bytes": 83749,
+        "hash": "22a249a4d788fd20a622f2958bd54c74ffcb55536da4dfa9e8c5d056f6258fc5"
+      },
+      {
+        "file": "68-kubernetes_seguridad.md",
+        "size_bytes": 59664,
+        "hash": "8287268a7d1ece004cae395894ad9a4f2a92b1eabd1f80de997e450ac3bce66b"
+      },
+      {
+        "file": "69-concienciacion_formacion.md",
+        "size_bytes": 7640,
+        "hash": "061a22a435c12d5db73a065c92bd421d259555f1a0aee676d189f234ac173253"
+      }
+    ],
+    "clean_md": [
+      {
+        "file": "00-gobernanza_marco_ciberseguridad.md",
+        "size_bytes": 117176,
+        "hash": "7d16b4b3e658966490d0783d83417b8b14d07913885f72b330a0e7eab4330ea8"
+      },
+      {
+        "file": "01-glosario_ccn.md",
+        "size_bytes": 2038976,
+        "hash": "f3f6ddcad67aa5cbf920a485fe435d06c481be8663b5ea9aad15aa58371aa3f7"
+      },
+      {
+        "file": "02-glosario_ciberseguridad_incibe_2021.md",
+        "size_bytes": 138496,
+        "hash": "653ec94ee37013088297ce64e20d42754fcddcf0e4fa351c11773760c4a9453e"
+      },
+      {
+        "file": "03-observatorio_riesgos_ciberseguridad_2024.md",
+        "size_bytes": 88099,
+        "hash": "aa31860a08ee5df31bdb7582d40c14e6b36d32bc38df13b2f30dc4eddf9bb1b7"
+      },
+      {
+        "file": "04-observatorio_riesgos_ciberseguridad_2024_pliegos.md",
+        "size_bytes": 86836,
+        "hash": "17c25643bcab78fedf3a8800ceef10bf49fdf416f78f12f07e81c39698421a62"
+      },
+      {
+        "file": "05-ens_medidas_implantacion.md",
+        "size_bytes": 214282,
+        "hash": "7772bdadc16b358a441b01abb3089bbe8b6f0fd8cad79171b956dd0e72b1f5e7"
+      },
+      {
+        "file": "06-ens_declaracion_aplicabilidad.md",
+        "size_bytes": 34773,
+        "hash": "28cbf361de8d722cdea9c2809250e1155a2be343a7870acd66d18a2f1dcd7bd0"
+      },
+      {
+        "file": "07-nist_csf_v2.md",
+        "size_bytes": 69098,
+        "hash": "85871c39c4e82971b8edd9292c4ab34c9d03d72421b6dfa2db7497bca914d147"
+      },
+      {
+        "file": "08-cumplimiento_legal_incibe.md",
+        "size_bytes": 24840,
+        "hash": "c8c009b11b0592bc17880d3d206d98886d73929fa5daf4d9305e00d1305ef729"
+      },
+      {
+        "file": "09-pilar_analisis_gestion_riesgos.md",
+        "size_bytes": 180675,
+        "hash": "6ac2be1291163ddc4588978ef6fd51cc3f5430a9db9b68574ea2de13b905432c"
+      },
+      {
+        "file": "10-pilar_manual_herramienta_v62.md",
+        "size_bytes": 53030,
+        "hash": "c1c67a6709053272c8f2a4db790e1ab9acec6df2d46578b32868d146026b4a72"
+      },
+      {
+        "file": "11-pilar_impacto_continuidad.md",
+        "size_bytes": 57736,
+        "hash": "b1f729bf33a244c43c6ac89004a34f69ab37c8b716d2d1034f69378a8affeedb"
+      },
+      {
+        "file": "12-rmat_manual_usuario.md",
+        "size_bytes": 64872,
+        "hash": "4d481ca067acf232e61f893c3ce5e9137e6452a2e48f6e11a341a7fbbea3a9f7"
+      },
+      {
+        "file": "13-ccn_stic_473c.md",
+        "size_bytes": 39270,
+        "hash": "da0f359f5461e45db90448efa7b6a836d8ec036bcaf8ab09b12547e4f8656bd2"
+      },
+      {
+        "file": "14-gestion_riesgos_metad_incibe.md",
+        "size_bytes": 41828,
+        "hash": "359646ec51ab2a8690d9a827301d2b375d2c7061d794be8842bd39a0e29d8e36"
+      },
+      {
+        "file": "15-plan_director_seguridad.md",
+        "size_bytes": 11189,
+        "hash": "7ba11b11ed979f5f2d99e4c7a62a841a7a0191f5e13d484882acd5105c338374"
+      },
+      {
+        "file": "16-principios_recomendaciones_basicas.md",
+        "size_bytes": 74875,
+        "hash": "30ae3bc2b719bae2e9cbc8c4a72e09990e6125d10000f949ceabcfd892bd1fb2"
+      },
+      {
+        "file": "17-rgpd_competitividad_2024.md",
+        "size_bytes": 90220,
+        "hash": "f3bcd8fdacc33d949d551d1e49c0f2721091734d51a5a12815d3b32fa9a4cb89"
+      },
+      {
+        "file": "18-gestion_cibercrisis.md",
+        "size_bytes": 96148,
+        "hash": "a8261df8c0f307b7d9ac2d4a12a1abadad62c8a29abe8dbbd944ae8ac16555fb"
+      },
+      {
+        "file": "19-cibercrisis_entidades_locales.md",
+        "size_bytes": 130377,
+        "hash": "d50a919fc66e82cf78ab93b65d90667ff8df8082661eafa8f6a2495dced7b894"
+      },
+      {
+        "file": "20-gestion_crisis_incibe.md",
+        "size_bytes": 90684,
+        "hash": "8bbaef8ce3e2d110107d50f261b9038492d2655161cb208f2938af52f913042a"
+      },
+      {
+        "file": "21-ransomware_ccn.md",
+        "size_bytes": 62393,
+        "hash": "6d962be2cd68420d6d7ce3d7fbaae37be3f10a9c57fe3f1f7d713ffd1e2f6711"
+      },
+      {
+        "file": "22-ransomware_incidentes_ccn.md",
+        "size_bytes": 36518,
+        "hash": "db6a61fcb574e704aae1f021e0e3a350a45f9e0a89c7e2dffd68a2c2dff8d317"
+      },
+      {
+        "file": "23-ransomware_incibe.md",
+        "size_bytes": 57969,
+        "hash": "e165b9f057c444ff1fa587e014a5f0a9a32995ab35d4d7e99dea56bf97f9a52c"
+      },
+      {
+        "file": "24-fuga_informacion.md",
+        "size_bytes": 38806,
+        "hash": "0ebfa2e12d28cc82139e7a12419edc537ef3d5c331943a999bfb5892ecafdcb4"
+      },
+      {
+        "file": "25-ciberamenazas_entornos_empresariales.md",
+        "size_bytes": 115165,
+        "hash": "49c2d2525d29df3bc7e5d8d05d8640ff97cbd5407188cb571b3606ea860c5f55"
+      },
+      {
+        "file": "26-desinformacion_ciberespacio.md",
+        "size_bytes": 83055,
+        "hash": "e2b861581a3e45cf69370f06e15edfbeab7f5be4dc2a495e02f87d2dd5f72da9"
+      },
+      {
+        "file": "27-identidad_digital_ciberseguridad.md",
+        "size_bytes": 68390,
+        "hash": "9da1bc63e283c4a9fc1dbe54c99d988c85706ca4961798e04d61625ba3f61fe1"
+      },
+      {
+        "file": "28-inteligencia_artificial_ccn.md",
+        "size_bytes": 228359,
+        "hash": "2c3ed202668404b3219ca1796dfb2b427db397b7328719f6e4322b113a3bab6c"
+      },
+      {
+        "file": "29-etiquetas_seguridad.md",
+        "size_bytes": 10046,
+        "hash": "fc3694c51499f39700ad017d4f2c78bbffdbb96480f08156a8c361d5fb0fdcf6"
+      },
+      {
+        "file": "30-correo_electronico_seguridad.md",
+        "size_bytes": 66005,
+        "hash": "d752c9599059316da10f24ef0f192d857cce908e389bca1921c05769f7d46e4e"
+      },
+      {
+        "file": "31-correo_dmarc.md",
+        "size_bytes": 81759,
+        "hash": "e5467364c8690839f6945d9ca3219fe1c18d31e940ca1209fd1648518212afa0"
+      },
+      {
+        "file": "32-https_seguridad.md",
+        "size_bytes": 232287,
+        "hash": "4b2cc1d8284e38bc0bef4da20ffdcec34185583bc52e57a3298646ca619078a3"
+      },
+      {
+        "file": "33-proteccion_dos_cortafuegos.md",
+        "size_bytes": 39057,
+        "hash": "5ea3a2a4ba0fbbdc5386b6b189e5c6469117d7f0b675c8d95f38ad7cedd7dad0"
+      },
+      {
+        "file": "34-cdn_recomendaciones.md",
+        "size_bytes": 36309,
+        "hash": "cba2117bf02b8ad39a065ef111e2157e178df7b2f635a3d83ae48cfa9e460876"
+      },
+      {
+        "file": "35-seguridad_redes_wifi.md",
+        "size_bytes": 42074,
+        "hash": "c4357d7ef5b536035a083a8a4432500911965863535a3de782f991e2805326fd"
+      },
+      {
+        "file": "36-navegadores_web_seguridad.md",
+        "size_bytes": 69443,
+        "hash": "b6fab3904f91feb9886ed447a329b79c552ec987ec9de8f43e41782aa2342755"
+      },
+      {
+        "file": "37-firefox_seguridad.md",
+        "size_bytes": 43271,
+        "hash": "90b90f42940ccb02a92bda8c303bdb5ed7ff5ee322233bfd7f5fdce70618add7"
+      },
+      {
+        "file": "38-chrome_seguridad.md",
+        "size_bytes": 27047,
+        "hash": "c5fbb42376702f6948c9614045f3d66c10610b11ff880be2ebd0e357bbbe55d6"
+      },
+      {
+        "file": "39-edge_seguridad.md",
+        "size_bytes": 34064,
+        "hash": "e538f969253e2c7bda4af13655dfea284a05bfb2ac3b8d5b6181dbb5e1bd41ce"
+      },
+      {
+        "file": "40-endpoint_seguro.md",
+        "size_bytes": 111854,
+        "hash": "d23c5af59c7a1c21240fc696a38a1850bf3c49c637c8abe7c00821dbc465f522"
+      },
+      {
+        "file": "41-endpoint_seguro_anexo.md",
+        "size_bytes": 34329,
+        "hash": "d070c7d2a4a0370718438a3d2c38be0cd2fb25e7b0ed5f662135d95311cd6e78"
+      },
+      {
+        "file": "42-windows11_cis_benchmark.md",
+        "size_bytes": 1813206,
+        "hash": "bc335362c67928b5b9d578fee7aff5794f689b310bd8c34190169a70512a7c90"
+      },
+      {
+        "file": "43-macos_seguridad.md",
+        "size_bytes": 34412,
+        "hash": "2515fc1ca04a1aa9f6f174b9df01ddaff13799c16c6fb8b30ddf9d3455cae623"
+      },
+      {
+        "file": "44-dispositivos_moviles_seguridad.md",
+        "size_bytes": 144932,
+        "hash": "b327bc7c3386006042a1cc111c8ac466f244c0734dd4ac68302bf1d98b0496fb"
+      },
+      {
+        "file": "45-android_seguridad.md",
+        "size_bytes": 359344,
+        "hash": "4a78c41f3215e08406a93d5808b7d7f728a40c4d902793c1cb0f7a21f6d8fdce"
+      },
+      {
+        "file": "46-ipad_seguridad.md",
+        "size_bytes": 560536,
+        "hash": "7a18f4bbad3fd6b86f99fbcd2bbe799e5de165e74b4e5365a015eaa01942472a"
+      },
+      {
+        "file": "47-iphone_seguridad.md",
+        "size_bytes": 574206,
+        "hash": "bfd96485cb2d708f6b529ade16c193a5abfdbd8264ebfb1c14616b5e6dcf9e32"
+      },
+      {
+        "file": "48-mdm_gestion_dispositivos.md",
+        "size_bytes": 303293,
+        "hash": "62286ea9a9c49ca81909fc2b685ce201ae6fd8680ce85d6c1c744bca78dab361"
+      },
+      {
+        "file": "49-ios18_empleo_seguro.md",
+        "size_bytes": 72858,
+        "hash": "3b97f2d8cd8afb82d05f693810315ca7323f57aecb7b669dfbb7d4199ba18586"
+      },
+      {
+        "file": "50-apple_platform_security.md",
+        "size_bytes": 677484,
+        "hash": "ad3a328d89e4669de9790f043b525fd9347be7f3b96353ecf9998b3839742a53"
+      },
+      {
+        "file": "51-apple_servicios_seguridad.md",
+        "size_bytes": 271387,
+        "hash": "f3d6d5acbe1e391de7e7abc55724d893ffd532e0ee4f3fdfa21ac5e44c370a8e"
+      },
+      {
+        "file": "52-virtualizacion_buenas_practicas.md",
+        "size_bytes": 89489,
+        "hash": "c65c79175f01a45fad8f01cfd905ba92531dbb62e53727ed1bddf0d8c80eb28f"
+      },
+      {
+        "file": "53-nube_proteccion_dato_soberania.md",
+        "size_bytes": 136359,
+        "hash": "f295cb12096706de3f68b8abd348cec5f67de501919592500ebe225906ae891f"
+      },
+      {
+        "file": "54-almacenamiento_equipos_trabajo.md",
+        "size_bytes": 8203,
+        "hash": "e99602a0f6eefb2a908dbce25b0b5ebbd6b73527c11f0464f8509d7f9f016d46"
+      },
+      {
+        "file": "55-almacenamiento_nube.md",
+        "size_bytes": 8474,
+        "hash": "f3fc64c2c35a8611919c654d638aa0acc481c49b4a38e60549ca096fa5dd2450"
+      },
+      {
+        "file": "56-almacenamiento_red_corporativa.md",
+        "size_bytes": 10416,
+        "hash": "799edac8687046953dc2ca89b62a08674ba3f062c73e56eeab1605fa4919bde5"
+      },
+      {
+        "file": "57-copias_seguridad.md",
+        "size_bytes": 48404,
+        "hash": "083c93030e89396b7d374c01d7bafd44c8d369e4c8969204801ce8f0230517cb"
+      },
+      {
+        "file": "58-iot_seguridad.md",
+        "size_bytes": 43492,
+        "hash": "b7ed5dd5a86cfc43a9ade8192f1dd9f68c091e353b84e03c8314e0e7b128ff96"
+      },
+      {
+        "file": "59-iot_ccn.md",
+        "size_bytes": 59558,
+        "hash": "e58e9991e6349e9b027eac43d7ad0786679c5590e966c7c78141eac0fbbd3ad2"
+      },
+      {
+        "file": "60-redes_sociales.md",
+        "size_bytes": 112211,
+        "hash": "8b5db09a07fa9c42353238329893278b50ed23ac0420839ff7ef8066b5dd4c7a"
+      },
+      {
+        "file": "61-cryptojacking.md",
+        "size_bytes": 29098,
+        "hash": "550b25cc033e1c86bd2d4723a95fd8b292a81cbb857a5a8824ab475022ff8572"
+      },
+      {
+        "file": "62-desarrollo_seguro.md",
+        "size_bytes": 153997,
+        "hash": "095474e404b4b7da6bfd139c77edc45a3ebae691bbfdca90bae742e64e86b2bd"
+      },
+      {
+        "file": "63-drupal_seguridad.md",
+        "size_bytes": 123117,
+        "hash": "6f85c6bf9a3a709a19af1ede717535bba088ae9df8f035a962f0f5c1bb9f8524"
+      },
+      {
+        "file": "64-bbdd_db2_seguridad.md",
+        "size_bytes": 56785,
+        "hash": "30b315174dcef40a21d0578f72e92eccbe1a87de1f8a71b96b26edf294360fa8"
+      },
+      {
+        "file": "65-bbdd_seguridad_general.md",
+        "size_bytes": 50315,
+        "hash": "49518e4de5dc230d5ceaddd4eb57647959a4c50601118441e06fdbc614633670"
+      },
+      {
+        "file": "66-teletrabajo_ccn.md",
+        "size_bytes": 167675,
+        "hash": "ee0f9b666ffe0027eb18e177d434cfd8aa73caf2d399c9ec59b1e5dffaafe90e"
+      },
+      {
+        "file": "67-teletrabajo_incibe.md",
+        "size_bytes": 75965,
+        "hash": "24a22be0b5b969981d607c39f0edfcb1c3b9a30d36b77427622e87a8bdf03fc0"
+      },
+      {
+        "file": "68-kubernetes_seguridad.md",
+        "size_bytes": 56647,
+        "hash": "e38f4b4e1208e40aab8188e5607e1bf5f5a4a51aceed5885a4bb7ac289935b99"
+      },
+      {
+        "file": "69-concienciacion_formacion.md",
+        "size_bytes": 6882,
+        "hash": "801ce599dc1385af4ebeede457b3b57cf735480ae98c8fde44888b5827b31d4b"
+      }
+    ],
+    "chunks": {
+      "file": "chunks.jsonl",
+      "size_bytes": 14517645,
+      "hash": "44b114e6aade3596d45a697ebb0f6d4d8e2d6694c10fd67d3e655b86ce974404",
+      "num_chunks": 8580
+    }
+  },
+  "indexes": {
+    "vector": {
+      "file": "index.faiss",
+      "size_bytes": 13178925,
+      "hash": "fa4fc2487ebf7fc7cbe4041676c14c4abd4d3480d3439e6271a1d29b5cf102e5"
+    },
+    "bm25": {
+      "file": "bm25_index.pkl",
+      "size_bytes": 12344295,
+      "hash": "a431470e6b64bd137fd429dd3e3f417a36291cfa4b8f66f33394578b67f480d9"
+    }
+  },
+  "config_hashes": {
+    "retrieval.yml": "688df578b17e82a6d789748fa2dc1498161bf3f378510b7c6d989c8ecb71eae4",
+    "chunking.yml": "3e9adef747f1a9010a1941ad146968ba35277fe0b648657a5ce62048aba45b6f",
+    "CONFIG.yml": "58c236667f6b1904eb1756d94e5f0f0be195d1be87bdebcffdd141b2938e6c04"
+  },
+  "parameters": {
+    "chunking": {
+      "defaults": {
+        "min_tokens": 300,
+        "max_tokens": 900,
+        "overlap_tokens": 100,
+        "overlap_percent": null
+      },
+      "by_doc_type": {
+        "runbook": {
+          "min_tokens": 250,
+          "max_tokens": 450,
+          "overlap_tokens": 50
+        },
+        "procedimiento": {
+          "min_tokens": 250,
+          "max_tokens": 450,
+          "overlap_tokens": 50
+        },
+        "normativa": {
+          "min_tokens": 600,
+          "max_tokens": 900,
+          "overlap_tokens": 150
+        },
+        "conceptual": {
+          "min_tokens": 600,
+          "max_tokens": 900,
+          "overlap_tokens": 150
+        },
+        "guia": {
+          "min_tokens": 300,
+          "max_tokens": 900,
+          "overlap_tokens": 100
+        },
+        "politica": {
+          "min_tokens": 400,
+          "max_tokens": 800,
+          "overlap_tokens": 100
+        },
+        "reporte": {
+          "min_tokens": 300,
+          "max_tokens": 700,
+          "overlap_tokens": 80
+        }
+      },
+      "small_to_big": {
+        "enabled": false,
+        "micro_chunk_tokens": 160,
+        "parent_chunk_tokens": 700,
+        "expansion_context": "section"
+      },
+      "splitting": {
+        "strategy": "markdown_headers",
+        "headers_priority": [
+          "#",
+          "##",
+          "###"
+        ],
+        "preserve_lists": true,
+        "preserve_tables": true,
+        "preserve_code_blocks": true,
+        "large_table_strategy": "serialize_rows"
+      },
+      "required_metadata": [
+        "doc_id",
+        "chunk_id",
+        "source_file",
+        "section_path",
+        "page_start",
+        "page_end",
+        "lang",
+        "doc_type",
+        "version"
+      ],
+      "optional_metadata": [
+        "frameworks",
+        "security_tags",
+        "published_at",
+        "breadcrumb"
+      ]
+    },
+    "retrieval": {
+      "search": {
+        "mode": "hybrid",
+        "top_k": 8,
+        "final_k": 5,
+        "min_score": 0.25
+      },
+      "hybrid": {
+        "vector_weight": 0.65,
+        "bm25_weight": 0.35,
+        "fusion_method": "rrf"
+      },
+      "reranking": {
+        "enabled": false,
+        "top_n": 5
+      },
+      "filters": {
+        "enabled": true,
+        "available_fields": [
+          "doc_type",
+          "lang",
+          "frameworks",
+          "security_tags",
+          "domain"
+        ]
+      },
+      "context": {
+        "max_context_tokens": 3000,
+        "include_metadata": true,
+        "separator": "\n---\n"
+      },
+      "citation": {
+        "format": "markdown",
+        "fields": [
+          "source_file",
+          "section_path",
+          "page_start",
+          "page_end"
+        ],
+        "fallback_page": "n/d"
+      }
+    },
+    "embeddings": {
+      "model_name": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+      "device": "cpu",
+      "batch_size": 64,
+      "normalize": true,
+      "dimension": 384
+    },
+    "llm": {
+      "context_length": 4096,
+      "max_tokens": 1024,
+      "temperature": 0.1,
+      "top_p": 0.9,
+      "n_gpu_layers": 0,
+      "n_threads": 4
+    }
+  }
+}

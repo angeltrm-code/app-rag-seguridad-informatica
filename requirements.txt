@@ -1,0 +1,26 @@
+# ============================================================
+# requirements.txt — Dependencias (100% local, sin APIs externas)
+# ============================================================
+
+# --- Core ---
+pyyaml>=6.0,<7
+rich>=13.0,<14
+
+# --- PDF ---
+pymupdf>=1.24,<2          # Extracción de texto PDF (fitz)
+
+# --- Embeddings ---
+sentence-transformers>=3.0,<4
+torch>=2.0                 # Requerido por sentence-transformers
+
+# --- Vector index ---
+faiss-cpu>=1.8,<2          # Índice vectorial FAISS
+
+# --- BM25 (opcional) ---
+rank-bm25>=0.2,<1
+
+# --- LLM local ---
+llama-cpp-python>=0.3,<1   # Inferencia GGUF local
+
+# --- Utilidades ---
+numpy>=1.26,<3

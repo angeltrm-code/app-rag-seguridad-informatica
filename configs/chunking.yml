@@ -1,0 +1,78 @@
+# ============================================================
+# chunking.yml — Parámetros de chunking
+# ============================================================
+# Reglas según §6 de la especificación.
+
+# --- Tamaños por defecto ---
+defaults:
+  min_tokens: 300
+  max_tokens: 900
+  overlap_tokens: 100       # ~15-20% del tamaño medio
+  overlap_percent: null     # Alternativa: usar porcentaje (15-20)
+
+# --- Ajustes por tipo de documento ---
+by_doc_type:
+  runbook:
+    min_tokens: 250
+    max_tokens: 450
+    overlap_tokens: 50
+  procedimiento:
+    min_tokens: 250
+    max_tokens: 450
+    overlap_tokens: 50
+  normativa:
+    min_tokens: 600
+    max_tokens: 900
+    overlap_tokens: 150
+  conceptual:
+    min_tokens: 600
+    max_tokens: 900
+    overlap_tokens: 150
+  guia:
+    min_tokens: 300
+    max_tokens: 900
+    overlap_tokens: 100
+  politica:
+    min_tokens: 400
+    max_tokens: 800
+    overlap_tokens: 100
+  reporte:
+    min_tokens: 300
+    max_tokens: 700
+    overlap_tokens: 80
+
+# --- Small-to-Big (opcional, recomendado) ---
+small_to_big:
+  enabled: false            # Activar para precisión con micro-chunks
+  micro_chunk_tokens: 160   # 128–200 tokens
+  parent_chunk_tokens: 700  # 512–900 tokens
+  expansion_context: "section"  # Expandir dentro de la misma sección
+
+# --- Estrategia de splitting ---
+splitting:
+  strategy: "markdown_headers"    # markdown_headers | recursive | sentence
+  headers_priority: ["#", "##", "###"]
+  # Reglas de integridad (§6.1):
+  preserve_lists: true            # No cortar listas a mitad
+  preserve_tables: true           # Tablas como unidad atómica
+  preserve_code_blocks: true      # No cortar bloques de código
+  large_table_strategy: "serialize_rows"  # serialize_rows | keep_whole
+
+# --- Metadatos obligatorios por chunk (§6.3) ---
+required_metadata:
+  - "doc_id"
+  - "chunk_id"
+  - "source_file"
+  - "section_path"
+  - "page_start"
+  - "page_end"
+  - "lang"
+  - "doc_type"
+  - "version"
+
+# --- Metadatos opcionales (si se pueden inferir) ---
+optional_metadata:
+  - "frameworks"          # ENS, NIST, CIS, OWASP, etc.
+  - "security_tags"       # CVE, ATT&CK, control IDs
+  - "published_at"
+  - "breadcrumb"

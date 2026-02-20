@@ -1,0 +1,57 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Models (large files, download locally)
+models/*.gguf
+models/*.bin
+models/*.safetensors
+models/*.onnx
+
+# Indexes (rebuilt from pipeline)
+indexes/vector/*.faiss
+indexes/vector/*.pkl
+indexes/bm25/*.pkl
+indexes/metadata/*.json
+
+# Data — PDFs and pipeline outputs (large files)
+data/01_raw_pdfs/*.pdf
+data/02_extracted_md/*.md
+data/03_clean_md/*.md
+data/04_chunks/chunks.jsonl
+data/04_chunks/chunks_qa.json
+data/incoming_pdfs/*.pdf
+data/incoming_pdfs/*.PDF
+
+# Backups (local only)
+backups/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Temporary
+tmp/
+temp/

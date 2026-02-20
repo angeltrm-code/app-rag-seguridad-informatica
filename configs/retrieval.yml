@@ -1,0 +1,48 @@
+# ============================================================
+# retrieval.yml — Parámetros de retrieval
+# ============================================================
+
+# --- Búsqueda ---
+search:
+  mode: "hybrid"            # vector | bm25 | hybrid
+  top_k: 8                  # Candidatos iniciales
+  final_k: 5                # Tras reranking/fusión
+  min_score: 0.25           # Umbral mínimo de relevancia (0.0–1.0)
+  # Si ningún resultado supera min_score, el sistema se abstiene.
+
+# --- Pesos para búsqueda híbrida ---
+hybrid:
+  vector_weight: 0.65
+  bm25_weight: 0.35
+  fusion_method: "rrf"      # rrf (Reciprocal Rank Fusion) | weighted_sum
+
+# --- Reranking ---
+reranking:
+  enabled: false
+  top_n: 5                  # Cuántos reranquear
+
+# --- Filtros por metadatos ---
+filters:
+  enabled: true
+  available_fields:
+    - "doc_type"             # política, runbook, guía, reporte
+    - "lang"                 # es, en
+    - "frameworks"           # ENS, NIST, CIS, OWASP
+    - "security_tags"        # CVE, ATT&CK
+    - "domain"               # gobernanza, IAM, endpoint, red, etc.
+
+# --- Contexto para el LLM ---
+context:
+  max_context_tokens: 3000  # Máximo de tokens de contexto para el LLM
+  include_metadata: true    # Incluir metadatos de chunk en el contexto
+  separator: "\n---\n"      # Separador entre chunks en el contexto
+
+# --- Citación (§7) ---
+citation:
+  format: "markdown"        # markdown | json
+  fields:
+    - "source_file"
+    - "section_path"
+    - "page_start"
+    - "page_end"
+  fallback_page: "n/d"      # Si no hay página, usar este valor

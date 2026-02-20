@@ -1,0 +1,78 @@
+# ============================================================
+# CONFIG.yml — Configuración principal del sistema RAG
+# ============================================================
+# Modificar según el entorno local. Todos los modelos deben
+# ser locales (sin APIs externas).
+
+project:
+  name: "RAG Seguridad Informática"
+  version: "0.1.0"
+  lang: ["es", "en"]
+
+# --- Rutas de datos ---
+paths:
+  incoming_pdfs: "data/incoming_pdfs"
+  raw_pdfs: "data/01_raw_pdfs"
+  extracted_md: "data/02_extracted_md"
+  clean_md: "data/03_clean_md"
+  chunks: "data/04_chunks"
+  indexes: "indexes"
+  vector_index: "indexes/vector"
+  bm25_index: "indexes/bm25"
+  metadata_store: "indexes/metadata"
+  models: "models"
+  reports: "reports"
+  manifests: "manifests"
+  backups: "backups"
+  prompts: "prompts"
+
+# --- Modelo de embeddings (local) ---
+embeddings:
+  model_name: "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+  # Alternativas recomendadas:
+  #   - sentence-transformers/all-MiniLM-L6-v2 (solo inglés, más rápido)
+  #   - BAAI/bge-m3 (multilingüe, más preciso, más lento)
+  device: "cpu"          # cpu | cuda
+  batch_size: 64
+  normalize: true
+  dimension: 384         # Depende del modelo seleccionado
+
+# --- Modelo LLM local (llama.cpp / GGUF) ---
+llm:
+  model_path: "models/mistral-7b-instruct-v0.2.Q4_K_M.gguf"
+  # Descargar manualmente o con script:
+  #   huggingface-cli download TheBloke/Mistral-7B-Instruct-v0.2-GGUF \
+  #     mistral-7b-instruct-v0.2.Q4_K_M.gguf --local-dir models/
+  context_length: 4096
+  max_tokens: 1024
+  temperature: 0.1
+  top_p: 0.9
+  n_gpu_layers: 0        # 0 = solo CPU; ajustar si hay GPU
+  n_threads: 4
+
+# --- Reranker (opcional, local) ---
+reranker:
+  enabled: false
+  model_name: "cross-encoder/ms-marco-MiniLM-L-6-v2"
+
+# --- Extracción PDF ---
+pdf_extraction:
+  engine: "pymupdf"       # pymupdf (recomendado) | pypdf
+  ocr_fallback: false     # Activar si hay PDFs escaneados (requiere tesseract)
+
+# --- Backups ---
+backup:
+  retention_count: 10     # Mínimo de backups a conservar
+  stages:
+    - "ingest"
+    - "clean"
+    - "chunking"
+    - "indexing"
+    - "prompts"
+    - "configs"
+
+# --- Logging ---
+logging:
+  level: "INFO"           # DEBUG | INFO | WARNING | ERROR
+  file: null              # null = solo consola; o ruta relativa
+  redact_sensitive: true  # Redactar datos sensibles en logs
