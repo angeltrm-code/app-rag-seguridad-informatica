@@ -1,0 +1,3 @@
+# Placeholder Logo
+# Reemplace este archivo con el logo del cliente o de la consultora.
+# Formato recomendado: PNG o SVG, mínimo 300x100px.

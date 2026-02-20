@@ -1,0 +1,51 @@
+{
+  "results": [
+    {
+      "has_results": true,
+      "num_results": 5,
+      "keyword_coverage": 0.667,
+      "keyword_hits": 2,
+      "top_score": 0.0305,
+      "id": "eval_001",
+      "domain": "IAM"
+    },
+    {
+      "has_results": true,
+      "num_results": 5,
+      "keyword_coverage": 1.0,
+      "keyword_hits": 3,
+      "top_score": 0.0164,
+      "id": "eval_002",
+      "domain": "Endpoint"
+    },
+    {
+      "has_results": true,
+      "num_results": 5,
+      "keyword_coverage": 0.667,
+      "keyword_hits": 2,
+      "top_score": 0.0315,
+      "id": "eval_003",
+      "domain": "IR"
+    },
+    {
+      "has_results": true,
+      "num_results": 5,
+      "keyword_coverage": 1.0,
+      "keyword_hits": 3,
+      "top_score": 0.0164,
+      "id": "eval_004",
+      "domain": "Gobernanza"
+    },
+    {
+      "has_results": true,
+      "num_results": 5,
+      "keyword_coverage": 1.0,
+      "keyword_hits": 3,
+      "top_score": 0.032,
+      "id": "eval_005",
+      "domain": "BCP/DR"
+    }
+  ],
+  "avg_coverage": 0.8667999999999999,
+  "pass_rate": 1.0
+}

@@ -10,7 +10,7 @@ APP := $(PYTHON) -m app
 
 .PHONY: help bootstrap ingest extract clean chunk index pipeline \
         backup backup-list restore reports evals manifest \
-        status serve lint
+        status serve lint plan-pdf plan-docx plan-cliente plan-interno
 
 # ── Ayuda ───────────────────────────────────────────────────
 help: ## Mostrar esta ayuda
@@ -83,6 +83,23 @@ evals: ## Evaluación con golden set
 
 manifest: ## Generar manifiesto de iteración
 	$(APP).cli manifest
+
+# ── Entregables ────────────────────────────────────────────
+plan-pdf: ## Generar Plan de Seguridad en PDF
+	.venv/bin/python deliverables/plan_seguridad_empresa/build_pdf.py
+
+plan-docx: ## Generar Plan de Seguridad en DOCX (requiere pandoc)
+	@which pandoc > /dev/null 2>&1 || (echo "  [ERROR] pandoc no instalado"; exit 1)
+	pandoc deliverables/plan_seguridad_empresa/Plan_Seguridad_Empresa.md \
+		-o deliverables/plan_seguridad_empresa/Plan_Seguridad_Empresa.docx \
+		--toc --number-sections
+	@echo "  ✓ DOCX generado"
+
+plan-cliente: ## Generar Plan de Seguridad PDF (versión cliente, sin citas)
+	.venv/bin/python deliverables/plan_seguridad_empresa_cliente/build_pdf.py
+
+plan-interno: ## Generar Plan de Seguridad PDF (versión interna, con trazabilidad)
+	.venv/bin/python deliverables/plan_seguridad_empresa_interno/build_pdf.py
 
 # ── Desarrollo ─────────────────────────────────────────────
 lint: ## Verificar sintaxis Python

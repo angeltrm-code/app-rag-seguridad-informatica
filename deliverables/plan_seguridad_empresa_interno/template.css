@@ -1,0 +1,391 @@
+/* ============================================================
+   template.css — PDF corporativo para CLIENTE
+   Sobrio, profesional, sin emojis ni citas granulares
+   ============================================================ */
+
+/* ── Page ────────────────────────────────────────────────── */
+@page {
+    size: A4;
+    margin: 25mm 20mm 28mm 20mm;
+
+    @top-left {
+        content: "Plan de Seguridad  ·  __CLIENT__  ·  __VERSION__";
+        font-family: "Inter", "Segoe UI", Arial, sans-serif;
+        font-size: 7.5pt;
+        color: #94a3b8;
+        border-bottom: 0.4pt solid #e2e8f0;
+        padding-bottom: 3mm;
+    }
+
+    @bottom-center {
+        content: "Página " counter(page) " de " counter(pages);
+        font-family: "Inter", "Segoe UI", Arial, sans-serif;
+        font-size: 7.5pt;
+        color: #94a3b8;
+    }
+
+    @bottom-right {
+        content: "__CLASSIFICATION__";
+        font-family: "Inter", "Segoe UI", Arial, sans-serif;
+        font-size: 7pt;
+        color: #cbd5e1;
+    }
+}
+
+@page :first {
+    margin: 0;
+
+    @top-left {
+        content: none;
+    }
+
+    @bottom-center {
+        content: none;
+    }
+
+    @bottom-right {
+        content: none;
+    }
+}
+
+/* ── Cover ───────────────────────────────────────────────── */
+.cover-page {
+    page-break-after: always;
+    width: 210mm;
+    height: 297mm;
+    display: flex;
+    flex-direction: column;
+    background: #0f172a;
+    color: #f8fafc;
+}
+
+.cover-accent-top {
+    height: 6mm;
+    background: linear-gradient(90deg, #2563eb 0%, #7c3aed 100%);
+}
+
+.cover-accent-bottom {
+    height: 4mm;
+    background: linear-gradient(90deg, #2563eb 0%, #7c3aed 100%);
+}
+
+.cover-body {
+    flex: 1;
+    padding: 40mm 30mm 20mm 30mm;
+    display: flex;
+    flex-direction: column;
+}
+
+.cover-logo-area {
+    margin-bottom: 22mm;
+}
+
+.cover-logo-box {
+    display: inline-block;
+    width: 50mm;
+    height: 16mm;
+    border: 0.5pt solid rgba(255, 255, 255, 0.25);
+    border-radius: 3pt;
+    text-align: center;
+    line-height: 16mm;
+    font-size: 9pt;
+    color: rgba(255, 255, 255, 0.35);
+    letter-spacing: 2pt;
+    text-transform: uppercase;
+}
+
+.cover-title-block {
+    margin-bottom: 30mm;
+}
+
+.cover-title {
+    font-family: "Inter", "Segoe UI", Arial, sans-serif;
+    font-size: 34pt;
+    font-weight: 800;
+    line-height: 1.1;
+    margin: 0 0 6mm 0;
+    letter-spacing: -0.5pt;
+    color: white;
+    border: none;
+    padding: 0;
+}
+
+.cover-subtitle {
+    font-size: 13pt;
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 1.5;
+    margin: 0;
+}
+
+.cover-meta {
+    margin-top: auto;
+    border-top: 0.5pt solid rgba(255, 255, 255, 0.15);
+    padding-top: 8mm;
+}
+
+.cover-meta-row {
+    display: flex;
+    gap: 15mm;
+    margin-bottom: 5mm;
+}
+
+.cover-meta-item {
+    flex: 1;
+}
+
+.cover-meta-label {
+    font-size: 7pt;
+    text-transform: uppercase;
+    letter-spacing: 1.5pt;
+    color: rgba(255, 255, 255, 0.4);
+    margin-bottom: 1mm;
+}
+
+.cover-meta-value {
+    font-size: 10.5pt;
+    font-weight: 600;
+    color: #e2e8f0;
+}
+
+/* ── Typography ──────────────────────────────────────────── */
+body {
+    font-family: "Inter", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    font-size: 10pt;
+    line-height: 1.65;
+    color: #1e293b;
+    orphans: 3;
+    widows: 3;
+}
+
+h1 {
+    font-size: 20pt;
+    font-weight: 800;
+    color: #0f172a;
+    margin: 16mm 0 5mm 0;
+    padding-bottom: 2.5mm;
+    border-bottom: 2pt solid #2563eb;
+    page-break-after: avoid;
+    letter-spacing: -0.3pt;
+}
+
+h1.toc-heading {
+    margin-top: 6mm;
+}
+
+h2 {
+    font-size: 14pt;
+    font-weight: 700;
+    color: #1e3a5f;
+    margin: 9mm 0 3.5mm 0;
+    padding-bottom: 1.5mm;
+    border-bottom: 0.5pt solid #e2e8f0;
+    page-break-after: avoid;
+}
+
+h3 {
+    font-size: 11.5pt;
+    font-weight: 600;
+    color: #334155;
+    margin: 5mm 0 2.5mm 0;
+    page-break-after: avoid;
+}
+
+p {
+    margin: 0 0 2.5mm 0;
+    text-align: justify;
+    hyphens: auto;
+}
+
+strong {
+    font-weight: 700;
+    color: #0f172a;
+}
+
+ul,
+ol {
+    margin: 2mm 0 3.5mm 0;
+    padding-left: 6mm;
+}
+
+li {
+    margin-bottom: 1.5mm;
+    page-break-inside: avoid;
+}
+
+hr {
+    border: none;
+    border-top: 0.5pt solid #e2e8f0;
+    margin: 8mm 0;
+}
+
+/* ── Tables ──────────────────────────────────────────────── */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 3mm 0 5mm 0;
+    font-size: 9pt;
+    page-break-inside: auto;
+}
+
+thead {
+    display: table-header-group;
+}
+
+thead tr {
+    background: #1e293b;
+    color: #f1f5f9;
+}
+
+thead th {
+    padding: 2.5mm 3mm;
+    text-align: left;
+    font-weight: 600;
+    font-size: 8pt;
+    text-transform: uppercase;
+    letter-spacing: 0.4pt;
+}
+
+tbody tr {
+    border-bottom: 0.4pt solid #e5e7eb;
+}
+
+tbody tr:nth-child(even) {
+    background: #f8fafc;
+}
+
+tbody td {
+    padding: 2mm 3mm;
+    vertical-align: top;
+}
+
+/* ── Priority badges ─────────────────────────────────────── */
+.prio-critica {
+    display: inline-block;
+    background: #dc2626;
+    color: white;
+    padding: 0.5mm 2.5mm;
+    border-radius: 2pt;
+    font-size: 7pt;
+    font-weight: 700;
+    letter-spacing: 0.5pt;
+}
+
+.prio-alta {
+    display: inline-block;
+    background: #ea580c;
+    color: white;
+    padding: 0.5mm 2.5mm;
+    border-radius: 2pt;
+    font-size: 7pt;
+    font-weight: 700;
+    letter-spacing: 0.5pt;
+}
+
+.prio-media {
+    display: inline-block;
+    background: #ca8a04;
+    color: white;
+    padding: 0.5mm 2.5mm;
+    border-radius: 2pt;
+    font-size: 7pt;
+    font-weight: 700;
+    letter-spacing: 0.5pt;
+}
+
+.prio-normal {
+    display: inline-block;
+    background: #16a34a;
+    color: white;
+    padding: 0.5mm 2.5mm;
+    border-radius: 2pt;
+    font-size: 7pt;
+    font-weight: 700;
+    letter-spacing: 0.5pt;
+}
+
+/* ── Code ────────────────────────────────────────────────── */
+code {
+    font-family: "JetBrains Mono", "Fira Code", Consolas, monospace;
+    font-size: 8.5pt;
+    background: #f1f5f9;
+    padding: 0.3mm 1.5mm;
+    border-radius: 2pt;
+    color: #2563eb;
+}
+
+pre {
+    background: #0f172a;
+    color: #e2e8f0;
+    padding: 3.5mm;
+    border-radius: 3pt;
+    font-size: 8pt;
+    line-height: 1.5;
+    overflow-wrap: break-word;
+    white-space: pre-wrap;
+    page-break-inside: avoid;
+    margin: 3mm 0 5mm 0;
+}
+
+pre code {
+    background: none;
+    padding: 0;
+    color: #e2e8f0;
+}
+
+/* ── Blockquotes ─────────────────────────────────────────── */
+blockquote {
+    border-left: 2.5pt solid #2563eb;
+    background: #eff6ff;
+    padding: 2.5mm 4mm;
+    margin: 3mm 0 4mm 0;
+    font-size: 9.5pt;
+    color: #1e3a5f;
+    page-break-inside: avoid;
+}
+
+blockquote p {
+    margin: 0;
+}
+
+/* ── TOC ─────────────────────────────────────────────────── */
+.toc-page {
+    page-break-after: always;
+}
+
+.toc-list {
+    list-style: none;
+    padding: 0;
+    margin: 5mm 0;
+}
+
+.toc-list li {
+    padding: 1.2mm 0;
+    border-bottom: 0.3pt dotted #cbd5e1;
+    font-size: 10pt;
+}
+
+.toc-list li.toc-l1 {
+    font-weight: 600;
+    color: #0f172a;
+}
+
+.toc-list li.toc-l2 {
+    padding-left: 8mm;
+    font-size: 9.5pt;
+    color: #475569;
+}
+
+.toc-list a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* ── Utilities ───────────────────────────────────────────── */
+.page-break {
+    page-break-before: always;
+}
+
+a {
+    color: #2563eb;
+    text-decoration: none;
+}

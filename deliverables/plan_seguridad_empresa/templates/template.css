@@ -1,0 +1,430 @@
+/* ============================================================
+   template.css — Estilos PDF corporativo (WeasyPrint)
+   Plan de Seguridad Informática Integral
+   ============================================================ */
+
+/* ── Page Setup ─────────────────────────────────────────────── */
+@page {
+    size: A4;
+    margin: 25mm 20mm 30mm 20mm;
+
+    @top-left {
+        content: "Plan de Seguridad | {CLIENTE} | v{VERSIÓN}";
+        font-family: "Inter", "Segoe UI", Arial, sans-serif;
+        font-size: 8pt;
+        color: #6b7280;
+        border-bottom: 0.5pt solid #d1d5db;
+        padding-bottom: 4mm;
+    }
+    @bottom-center {
+        content: "Página " counter(page) " de " counter(pages);
+        font-family: "Inter", "Segoe UI", Arial, sans-serif;
+        font-size: 8pt;
+        color: #6b7280;
+    }
+    @bottom-right {
+        content: "{CONFIDENCIALIDAD}";
+        font-family: "Inter", "Segoe UI", Arial, sans-serif;
+        font-size: 7pt;
+        color: #9ca3af;
+    }
+}
+
+/* ── Cover page ─────────────────────────────────────────────── */
+@page :first {
+    margin: 0;
+    @top-left { content: none; }
+    @bottom-center { content: none; }
+    @bottom-right { content: none; }
+}
+
+.cover-page {
+    page-break-after: always;
+    width: 210mm;
+    height: 297mm;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(160deg, #0f172a 0%, #1e3a5f 40%, #1e40af 100%);
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+.cover-top-bar {
+    height: 8mm;
+    background: #f59e0b;
+}
+
+.cover-content {
+    padding: 55mm 30mm 30mm 30mm;
+    flex: 1;
+}
+
+.cover-logo-area {
+    margin-bottom: 20mm;
+    text-align: left;
+}
+
+.cover-logo-placeholder {
+    display: inline-block;
+    width: 60mm;
+    height: 20mm;
+    border: 1pt dashed rgba(255,255,255,0.4);
+    border-radius: 4pt;
+    line-height: 20mm;
+    text-align: center;
+    font-size: 9pt;
+    color: rgba(255,255,255,0.5);
+    letter-spacing: 0.3pt;
+}
+
+.cover-title {
+    font-family: "Inter", "Segoe UI", Arial, sans-serif;
+    font-size: 32pt;
+    font-weight: 800;
+    line-height: 1.15;
+    margin: 0 0 6mm 0;
+    letter-spacing: -0.5pt;
+}
+
+.cover-subtitle {
+    font-family: "Inter", "Segoe UI", Arial, sans-serif;
+    font-size: 14pt;
+    font-weight: 400;
+    color: rgba(255,255,255,0.75);
+    margin: 0 0 25mm 0;
+    line-height: 1.5;
+}
+
+.cover-meta-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5mm 10mm;
+    margin-top: auto;
+    padding-top: 20mm;
+    border-top: 0.5pt solid rgba(255,255,255,0.2);
+}
+
+.cover-meta-item {
+    margin-bottom: 3mm;
+}
+
+.cover-meta-label {
+    font-size: 7.5pt;
+    text-transform: uppercase;
+    letter-spacing: 1pt;
+    color: rgba(255,255,255,0.5);
+    margin-bottom: 1mm;
+}
+
+.cover-meta-value {
+    font-size: 11pt;
+    font-weight: 600;
+    color: white;
+}
+
+.cover-bottom-bar {
+    height: 6mm;
+    background: #f59e0b;
+}
+
+/* ── Typography ─────────────────────────────────────────────── */
+body {
+    font-family: "Inter", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    font-size: 10pt;
+    line-height: 1.6;
+    color: #1f2937;
+    orphans: 3;
+    widows: 3;
+}
+
+/* ── Headings ───────────────────────────────────────────────── */
+h1 {
+    font-size: 22pt;
+    font-weight: 800;
+    color: #0f172a;
+    margin: 18mm 0 6mm 0;
+    padding-bottom: 3mm;
+    border-bottom: 2.5pt solid #1e40af;
+    page-break-after: avoid;
+    letter-spacing: -0.3pt;
+}
+
+h2 {
+    font-size: 15pt;
+    font-weight: 700;
+    color: #1e3a5f;
+    margin: 10mm 0 4mm 0;
+    padding-bottom: 2mm;
+    border-bottom: 1pt solid #dbeafe;
+    page-break-after: avoid;
+}
+
+h3 {
+    font-size: 12pt;
+    font-weight: 600;
+    color: #374151;
+    margin: 6mm 0 3mm 0;
+    page-break-after: avoid;
+}
+
+h4 {
+    font-size: 10.5pt;
+    font-weight: 600;
+    color: #4b5563;
+    margin: 4mm 0 2mm 0;
+    page-break-after: avoid;
+}
+
+/* ── Paragraphs and lists ──────────────────────────────────── */
+p {
+    margin: 0 0 3mm 0;
+    text-align: justify;
+    hyphens: auto;
+}
+
+ul, ol {
+    margin: 2mm 0 4mm 0;
+    padding-left: 6mm;
+}
+
+li {
+    margin-bottom: 1.5mm;
+    page-break-inside: avoid;
+}
+
+li > ul, li > ol {
+    margin-top: 1mm;
+    margin-bottom: 1mm;
+}
+
+/* ── Tables ─────────────────────────────────────────────────── */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 4mm 0 6mm 0;
+    font-size: 9pt;
+    page-break-inside: auto;
+}
+
+thead {
+    display: table-header-group;
+}
+
+thead tr {
+    background: #1e3a5f;
+    color: white;
+}
+
+thead th {
+    padding: 2.5mm 3mm;
+    text-align: left;
+    font-weight: 600;
+    font-size: 8.5pt;
+    text-transform: uppercase;
+    letter-spacing: 0.3pt;
+    border: none;
+}
+
+tbody tr {
+    border-bottom: 0.5pt solid #e5e7eb;
+}
+
+tbody tr:nth-child(even) {
+    background: #f8fafc;
+}
+
+tbody td {
+    padding: 2mm 3mm;
+    vertical-align: top;
+    border: none;
+}
+
+/* Priority badges */
+.prio-critica {
+    display: inline-block;
+    background: #dc2626;
+    color: white;
+    padding: 0.5mm 2mm;
+    border-radius: 2pt;
+    font-size: 7pt;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5pt;
+}
+.prio-alta {
+    display: inline-block;
+    background: #ea580c;
+    color: white;
+    padding: 0.5mm 2mm;
+    border-radius: 2pt;
+    font-size: 7pt;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5pt;
+}
+.prio-media {
+    display: inline-block;
+    background: #ca8a04;
+    color: white;
+    padding: 0.5mm 2mm;
+    border-radius: 2pt;
+    font-size: 7pt;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5pt;
+}
+.prio-normal {
+    display: inline-block;
+    background: #16a34a;
+    color: white;
+    padding: 0.5mm 2mm;
+    border-radius: 2pt;
+    font-size: 7pt;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5pt;
+}
+
+/* ── Code blocks ────────────────────────────────────────────── */
+code {
+    font-family: "JetBrains Mono", "Fira Code", "Consolas", monospace;
+    font-size: 8.5pt;
+    background: #f1f5f9;
+    padding: 0.5mm 1.5mm;
+    border-radius: 2pt;
+    color: #1e40af;
+}
+
+pre {
+    background: #0f172a;
+    color: #e2e8f0;
+    padding: 4mm;
+    border-radius: 3pt;
+    font-size: 8pt;
+    line-height: 1.5;
+    overflow-wrap: break-word;
+    white-space: pre-wrap;
+    page-break-inside: avoid;
+    margin: 3mm 0 5mm 0;
+}
+
+pre code {
+    background: none;
+    padding: 0;
+    color: #e2e8f0;
+}
+
+/* ── Blockquotes (notes) ───────────────────────────────────── */
+blockquote {
+    border-left: 3pt solid #1e40af;
+    background: #eff6ff;
+    padding: 3mm 4mm;
+    margin: 3mm 0 5mm 0;
+    font-size: 9.5pt;
+    color: #1e3a5f;
+    page-break-inside: avoid;
+}
+
+blockquote p {
+    margin: 0;
+}
+
+/* ── Horizontal rules ──────────────────────────────────────── */
+hr {
+    border: none;
+    border-top: 1pt solid #d1d5db;
+    margin: 8mm 0;
+}
+
+/* ── Sources sections ──────────────────────────────────────── */
+.fuentes-section {
+    background: #f8fafc;
+    border: 0.5pt solid #e2e8f0;
+    border-radius: 3pt;
+    padding: 3mm 4mm;
+    margin: 3mm 0 6mm 0;
+    font-size: 8.5pt;
+    page-break-inside: avoid;
+}
+
+.fuentes-section p {
+    font-weight: 600;
+    color: #374151;
+    margin-bottom: 1.5mm;
+}
+
+.fuentes-section ul {
+    margin: 0;
+    padding-left: 4mm;
+}
+
+.fuentes-section li {
+    margin-bottom: 0.5mm;
+    color: #6b7280;
+}
+
+/* ── Control table (change log) ────────────────────────────── */
+.control-table {
+    margin: 6mm 0;
+}
+
+.control-table table {
+    font-size: 9pt;
+}
+
+/* ── TOC ────────────────────────────────────────────────────── */
+.toc-page {
+    page-break-after: always;
+}
+
+.toc-page h1 {
+    border-bottom-color: #1e40af;
+}
+
+.toc-list {
+    list-style: none;
+    padding: 0;
+    margin: 4mm 0;
+}
+
+.toc-list li {
+    padding: 1mm 0;
+    border-bottom: 0.5pt dotted #d1d5db;
+    font-size: 10pt;
+}
+
+.toc-list li.toc-l2 {
+    padding-left: 8mm;
+    font-size: 9.5pt;
+    font-weight: 400;
+    color: #4b5563;
+}
+
+.toc-list li.toc-l1 {
+    font-weight: 600;
+    color: #0f172a;
+}
+
+/* ── Section break ─────────────────────────────────────────── */
+.page-break {
+    page-break-before: always;
+}
+
+/* ── Check/cross marks ─────────────────────────────────────── */
+.mark-ok { color: #16a34a; font-weight: bold; }
+.mark-warn { color: #ca8a04; font-weight: bold; }
+.mark-fail { color: #dc2626; font-weight: bold; }
+
+/* ── Strong emphasis ───────────────────────────────────────── */
+strong {
+    font-weight: 700;
+    color: #0f172a;
+}
+
+/* ── Links ──────────────────────────────────────────────────── */
+a {
+    color: #1e40af;
+    text-decoration: none;
+}
