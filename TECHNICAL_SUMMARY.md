@@ -8,10 +8,10 @@
 
 ## ¿Qué hace?
 
-1. **Ingesta y procesamiento** de PDFs de seguridad informática (70 documentos, 4.300+ páginas)
+1. **Ingesta y procesamiento** de PDFs de seguridad informática (154 documentos)
 2. **Indexación semántica** del corpus para búsqueda híbrida vectorial + léxica
 3. **Generación de planes de seguridad** fundamentados exclusivamente en el corpus (SSoT)
-4. **Producción de entregables PDF** corporativos listos para cliente
+4. **Producción de entregables PDF y DOCX** corporativos listos para cliente
 
 ---
 
@@ -28,8 +28,8 @@ PDF → Extract → Clean → Chunk → Index → Query/Generate
 | **Ingest** | `app/ingest.py` | Valida PDFs, calcula hashes SHA-256, detecta duplicados, mueve a `01_raw_pdfs/` |
 | **Extract** | `app/extract.py` | Extrae texto de PDFs a Markdown con PyMuPDF (preserva estructura de páginas) |
 | **Clean** | `app/clean.py` | Elimina ruido de OCR: dot-leaders, guiones rotos inter-línea, espaciado excesivo (8.5% reducción media) |
-| **Chunk** | `app/chunk.py` | Fragmenta por secciones Markdown respetando límites semánticos → 8.580 chunks en JSONL |
-| **Index** | `app/index.py` | Genera embeddings con `sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2`, crea índice FAISS (8.580 vectores) + BM25 léxico |
+| **Chunk** | `app/chunk.py` | Fragmenta por secciones Markdown respetando límites semánticos → 15.139 chunks en JSONL |
+| **Index** | `app/index.py` | Genera embeddings con `sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2`, crea índice FAISS (15.139 vectores) + BM25 léxico |
 | **Query** | `app/rag_engine.py` | Búsqueda híbrida con fusión RRF (Reciprocal Rank Fusion), genera respuestas con LLM local opcional |
 
 ### Arquitectura de retrieval
@@ -82,11 +82,11 @@ app-rag-seguridad-informatica/
 ├── app/                          # 14 scripts Python
 ├── configs/                      # 3 YAMLs (pipeline, chunking, retrieval)
 ├── data/
-│   ├── 01_raw_pdfs/              # 70 PDFs consolidados
+│   ├── 01_raw_pdfs/              # 154 PDFs consolidados
 │   ├── 02_extracted_md/          # Markdown crudo
 │   ├── 03_clean_md/              # Markdown limpio
-│   └── 04_chunks/                # chunks.jsonl (8.580 fragmentos)
-├── indexes/                      # FAISS (12.5 MB) + BM25
+│   └── 04_chunks/                # chunks.jsonl (15.139 fragmentos)
+├── indexes/                      # FAISS (~22 MB) + BM25
 ├── deliverables/
 │   ├── plan_seguridad_empresa_cliente/   # PDF vendible (sin citas)
 │   └── plan_seguridad_empresa_interno/   # PDF con trazabilidad
@@ -99,10 +99,7 @@ app-rag-seguridad-informatica/
 
 | Métrica | Valor |
 |---------|-------|
-| Documentos | 70 PDFs |
-| Páginas totales | 4.300+ |
-| Caracteres extraídos | ~8.7M |
-| Chunks indexados | 8.580 |
-| Tokens estimados | ~2.5M |
-| Índice vectorial | 12.57 MB (384-dim) |
+| Documentos | 154 PDFs |
+| Chunks indexados | 15.139 |
+| Índice vectorial | ~22 MB (384-dim) |
 | Reducción por limpieza | 8.5% media |

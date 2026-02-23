@@ -168,6 +168,14 @@ Alineación de controles con las seis funciones del NIST CSF v2: Gobernar (GV), 
 - Configuración de FileVault, Gatekeeper, firewall integrado y System Integrity Protection.
 - Gestión centralizada de actualizaciones.
 
+### Linux
+
+- Aplicación de CIS Benchmarks (p. ej. CIS Debian 12, CIS RHEL 9) y guías del CCN-CERT para familias clave (Debian/Ubuntu, RHEL/Alma/Rocky, SUSE).
+- **Hardening/Baselines:** Configuración estricta de control de acceso mandatorio (SELinux activado y/o AppArmor) y cifrado de particiones clave.
+- **Mínimo privilegio:** Restricción de perfiles de `sudoers`, deshabilitación de `root` por SSH remoto y reforzamiento de integraciones PAM.
+- **Parcheo y Logging:** Actualización automática/centralizada de repositorios, monitorización exhaustiva con `auditd` y recolección estructurada de logs del sistema operativo.
+- **Auditoría:** Escaneo y verificación de la configuración mediante OpenSCAP y cumplimiento continuo de la línea base instalada.
+
 ### Gestión de Configuración
 
 Implementación de un control efectivo de configuración y gestión de software, garantizando que los archivos ejecutables y plantillas compartidas residan en directorios de solo lectura.
@@ -457,12 +465,13 @@ Asignación genérica de responsabilidades por dominio de actuación. Se ajustar
 | Cortafuegos | Reglas de segmentación aplicadas | Reglas exportadas + changelog |
 | SPF/DKIM/DMARC | Registros DNS configurados | Registros DNS + informes DMARC |
 | Bastionado Windows | CIS Benchmark aplicado | Resultado de escaneo CIS-CAT o equivalente |
+| Bastionado Linux | Políticas PAM/Auditd/SELinux activadas | Reporte OpenSCAP o logs de auditoría CIS |
 | MDM | Dispositivos gestionados | Lista de dispositivos + políticas activas |
-| Cifrado de disco | BitLocker/FileVault habilitado | Estado de cifrado en inventario |
+| Cifrado de disco | BitLocker/FileVault/LUKS habilitado | Estado de cifrado en inventario |
 | Formación | Programa de concienciación ejecutado | Registro de asistencia + resultados phishing |
 | Incidentes | Plan de respuesta documentado | Procedimiento + registro de incidentes |
-| Actualizaciones | Parcheado gestionado | Informe de vulnerabilidades pendientes |
-| Privilegios | Revisión de accesos completada | Listado de usuarios con permisos administrativos |
+| Actualizaciones | Parcheado corporativo (Win/Mac/Linux) | Informe de vulnerabilidades pendientes |
+| Privilegios | Revisión de accesos y sudoers | Listado de usuarios con permisos administrativos |
 
 ---
 
@@ -516,9 +525,9 @@ Las recomendaciones de este plan se fundamentan en las siguientes familias de ma
 
 ### Cobertura del análisis
 
-El corpus documental analizado (70 documentos) proporciona cobertura amplia en:
+El corpus documental analizado (154 documentos) proporciona cobertura amplia en:
 - Gobernanza y normativa (ENS, NIST, RGPD)
-- Endpoint (Windows, macOS, dispositivos móviles)
+- Endpoint (Windows, macOS, distribuciones corporativas Linux, dispositivos móviles)
 - Red y perímetro (HTTPS, DDoS, WiFi)
 - Correo electrónico (DMARC, SPF, DKIM)
 - Respuesta a incidentes y ransomware
